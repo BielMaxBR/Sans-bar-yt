@@ -1,11 +1,9 @@
 {
-"update_url": "https://clients2.google.com/service/update2/crx",
-
-    "manifest_version": 2,
-    "name": "Nyan Cat Progress Bar for YouTube™",
-    "short_name": "NyanCat 4 YT",
-    "version": "1.18",
-    "description": "Nyan Cat Progress Bar for YouTube™! Nyan nyan nyan nyan nyan!",
+    "manifest_version": 3,
+    "name": "Sans dançando na barra do YouTube™",
+    "short_name": "sans bar YT",
+    "version": "1.19",
+    "description": "joga as bad times pra cima e rebola",
     "icons": {
         "16": "icons/icon16.png",
         "32": "icons/icon32.png",
@@ -16,9 +14,7 @@
         "default_icon": "icons/icon32.png"
     },
     "background": {
-        "scripts": [
-            "background.js"
-        ]
+        "service_worker": "background.js"
     },
     "content_scripts": [
         {
@@ -31,6 +27,13 @@
         }
     ],
     "web_accessible_resources": [
-        "nyanimated.gif"
+        {
+            "resources": [
+                "nyanimated.gif"
+            ],
+            "matches": [
+                "*://*.youtube.com/*"
+            ]
+        }
     ]
 }

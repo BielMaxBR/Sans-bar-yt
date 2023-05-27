@@ -25,6 +25,7 @@
     ],
     "web_accessible_resources": [
         {
+            "resources": [],
             "matches": [
                 "*://*.youtube.com/*"
             ]

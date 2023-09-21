@@ -13,7 +13,7 @@
 
 .ytp-scrubber-container {
     /* nyanimated gif */
-    background: url('https://thumbs.gfycat.com/AmusingLateArrowana-size_restricted.gif') -40% 120% / 36px no-repeat;
+    background: url('chrome-extension://__MSG_@@extension_id__/gif/sans-undertale-dance.gif') -80% -100% / 36px no-repeat;
     background-size: 27px;
     width: 40px;
     height: 24px;
